@@ -1,5 +1,10 @@
 import json
 
+from add_recipe import add_recipe
+from search_recipes import search_by_ingredient
+from view_recipes import view_all_recipes
+from delete_recipe import delete_recipe
+
 DATA_FILE = "recipes.json"
 
 def load_recipes():
@@ -12,11 +17,6 @@ def load_recipes():
 def save_recipes(recipes):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(recipes, f, ensure_ascii=False, indent=4)
-
-from add_recipe import add_recipe
-from search_recipes import search_by_ingredient
-from view_recipes import view_all_recipes
-from delete_recipe import delete_recipe
 
 def main():
     recipes = load_recipes()
