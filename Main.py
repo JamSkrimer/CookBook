@@ -1,11 +1,11 @@
 import json
 
+DATA_FILE = "recipes.json"
+
 from add_recipe import add_recipe
 from search_recipes import search_by_ingredient
 from view_recipes import view_all_recipes
 from delete_recipe import delete_recipe
-
-DATA_FILE = "recipes.json"
 
 def load_recipes():
     try:
