@@ -12,4 +12,3 @@ def load_recipes():
 def save_recipes(recipes):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(recipes, f, ensure_ascii=False, indent=4)
-
